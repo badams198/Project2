@@ -1,245 +1,81 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--My CSS-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pet-Friender</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Added link to the jQuery Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <title>PetFriender</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<!-- <body>
-    
-           
-            <li>
-                <a href="browser.html">
-                    <div class="row">
-                        <div class="col s4 m4">
-                            <img class="navbar-img" src="assets/images/home-icon.png" alt="browser">
-                        </div>
-                        <div class="col s4 m4">
-                            <h8 class="center-text">browser</h8>
-                        </div>
-    
-                    </div>
-            </li>
-            <li>
-                <a href="recipes.html">
-                    <div class="row">
-                        <div class="col s4 m4">
-                            <img class="navbar-img" src="assets/images/recipe-icon.png" alt="Profile">
-                        </div>
-                        <div class="col s4 m4">
-                            <h8 class="center-text">Profile</h8>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <div class="row">
-                            <div class="col s4 m4">
-                                <img class="navbar-img" src="assets/images/home-icon.png" alt="Home">
-                            </div>
-                            <div class="col s8 m8">
-                                <h8 class="center-text">Home</h8>
-                            </div>
-                        </div>
-                        <div class="col s4 m4">
-                            <h8 class="center-text">Cuts</h8>
-                        </div>
-                </li>
-                <li>
-                    <a class="modal-trigger" onclick="$('#modal-under-construction').modal('open')"
-                        href="#modal-under-construction">
-                        <div class="row">
-                            <div class="col s4 m4">
-                                <img class="navbar-img" src="assets/images/cuts-icon.png" alt="Cuts">
-                            </div>
-                            <div class="col s8 m8">
-                                <h8 class="center-text">Cuts</h8>
-                            </div>
-                        </div>
-                        <div class="col s4 m4">
-                            <h8 class="center-text">Cleaning</h8>
-                        </div>
-                <li>
-                    <a class="modal-trigger" onclick="$('#modal-under-construction').modal('open')"
-                        href="#modal-under-construction">
-                        <div class="row">
-                            <div class="col s4 m4">
-                                <img class="navbar-img" src="assets/images/star-filled-icon.png" alt="Favorites">
-                            </div>
-                            <div class="col s8 m8">
-                                <h8 class="center-text">Favorites</h8>
-                            </div>
-                        </div>
-                        <div class="col s4 m4">
-                            <h8 class="center-text">Favorites</h8>
-                        </div>
-                </li>
-    
-                <li class="logged-out" style="display: none;">
-                    <!-- Class of logged-out so we can display only when logged out. display:none so it does not display when page is refreshed-->
-                    <a href="#" class="modal-trigger black-text" data-target="modal-login">
-                        <!--Puts "Login" in navbar. When clicked, "modal-login" will pop up (scroll down in html to find modal-login)-->
-                        <div class="row">
-                            <div class="col s4 m4">
-                                <img class="navbar-img" src="assets/images/profile-icon.png" alt="Sign-in">
-                            </div>
-                            <div class="col s8 m8">
-                                <h8 class="center-text">Sign-in</h8>
-                            </div>
-                        </div>
-                        <div class="col s4 m4">
-                            <h8 class="center-text">Sign-in</h8>
-                        </div>
-                    </a>
-                    <!--Puts "Logout" in navbar. When clicked, "modal-logout" will pop up (scroll down in html to find modal-logout)-->
-                </li>
-    
-                <li class="logged-out" style="display: none;">
-                    <!--Class of logged-out so we can display only when logged out. display:none so it does not display when page is refreshed-->
-                    <a href="#" class="modal-trigger black-text center-align" data-target="modal-signup">Sign up</a>
-                    <!--Puts "Sign up" in navbar. When clicked, "modal-signup" will pop up (scroll down in html to find modal-signup)-->
-                </li>
-    
-            </ul>
-            <div id="nearby-store"></div>
-    
-            <a href="#" data-target="slide-out" class="sidenav-trigger">
-                <i class="material-icons white-text medium">menu</i></a>
-    
+<body>
 
-        <div class="icon-container contaner">
-            <div class="row">
-                <a href="recipes.html">
-                    <div class="recipes col s6 center-align">
-                        <img src="assets/images/recipe-icon-white.png" alt="Recipes">
-                        <h3>Recipes</h3>
-                </a>
+    <!-- Navbar -->
+
+    <div class="navbar-fixed">
+
+        <nav class="black">
+            <div class="container">
+                <div="nav-wrapper">
+                    <a href="#" class="brand-logo">Pet-Friender</a>
+                    <ul class="right hide-on-med-and-down"  id="navList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Browser.html">Browser</a></li>
+                        <li><a href="Profile.html">Profile</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
             </div>
-            <a class="modal-trigger" onclick="$('#modal-under-construction').modal('open')"
-                href="#modal-under-construction">
-                <div class="cuts col s6 center-align">
-                    <img src="assets/images/cuts-icon-white.png" alt="Cuts">
-                    <h3>Cuts</h3>
-                </div>
-            </a>
-        </div>
-        <a class="modal-trigger" onclick="$('#modal-under-construction').modal('open')"
-            href="#modal-under-construction">
-        <div class="row">
-                <div class="cleaning col s6 center-align">
-                    <img src="assets/images/cleaning-icon-white.png" alt="Cleaning">
-                    <h3>Cleaning</h3>
-                </div>
+    </div>
+    </nav>
+
+    </div>
+
+    <!-- Landing Screen -->
+
+    <div class="section" id="landing">
+        <h2 style="color:white;" id="mainText" class="center">Home</h2>
+        <h1 style="color:white;" class="center">
+
+            <b>Pet-Friender</b>
+        </h1>
+        <h5 style="color:white;" id="mainText" class="center">browser</h5>
+
+    </div>
+
+
+    <!-- <div class="fixed-action-btn vertical">
+        <a class="btn-floating btn-large  blue-grey darken-4">
+            <i class="fa fa-globe"></i>
         </a>
-        <a class="modal-trigger" onclick="$('#modal-under-construction').modal('open')"
-            href="#modal-under-construction">
-            <div class="favorites col s6 center-align">
-                <img src="assets/images/star-filled-icon-white.png" alt="Favorites" class="valign-center">
-                <h3>Favorites</h3>
-        </a>
+        <ul>
 
-    </div>
-    </div>
-    </div>
-    </div>
-<!-- ACCOUNT MODAL -->
-<div id="modal-account" class="modal">
-        <!-- because id="modal-account," this modal pops up when data-target="modal-account" (Account button) is clicked -->
-        <div class="modal-content center-align black-text">
-            <!--content of the modal-->
-            <h4>Account details</h4><br />
-            <!--Shows up at the top of the modal, like a heading-->
-            <div class="account-details"></div>
+            <li><a target="_blank" href="https://github.com/pritiezzi" class="btn-floating cyan lighten-1"><i
+                        class="fa fa-github"></i></a></li>
+            <li><a target="_blank"
+                    href="https://www.linkedin.com/in/priscila-tiezzi"
+                    class="btn-floating blue "><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div> -->
+
+    <!-- FOOTER -->
+
+    <footer class="section page-footer black">
+        <div class="container center-align">
+            &#169;Pet-Friender
         </div>
-    </div>
-
-    <!-- LOGIN MODAL -->
-    <div id="modal-login" class="modal">
-        <!-- because id="modal-login," this modal pops up when data-target="modal-login" (login button) is clicked -->
-        <div class="modal-content black-text">
-            <!--content of the modal-->
-            <h4>Login</h4><br />
-            <!--Shows up at the top of the modal, like a heading-->
-            <form id="login-form">
-                <!--Input fields for sign up modal-->
-                <div class="input-field">
-                    <input type="email" id="login-email" required />
-                    <label for="login-email">Email address</label>
-                </div>
-                <div class="input-field">
-                    <input type="password" id="login-password" required />
-                    <label for="login-password">Your password</label>
-                </div>
-                <button class="btn yellow darken-2 z-depth-0 green-submit-button">Login</button>
-            </form>
-        </div>
-    </div>
+    </footer>
 
 
-    <!-- SIGN UP MODAL -->
-    <div id="modal-signup" class="modal">
-        <!-- because id="modal-signup," this modal pops up when data-target="modal-signup" (signup button) is clicked -->
-        <div class="modal-content">
-            <!--content of the modal-->
-            <h4>Sign up</h4><br />
-            <!--Shows up at the top of the modal, like a heading-->
-            <form id="signup-form">
-                <!--Input fields for sign up modal-->
-                <div class="input-field">
-                    <input type="email" id="signup-email" required />
-                    <label for="signup-email">Email address</label>
-                </div>
-                <div class="input-field">
-                    <input type="password" id="signup-password" required />
-                    <label for="signup-password">Choose password</label>
-                </div>
-                <div class="input-field">
-                    <input type="text" id="signup-bio" required />
-                    <label for="signup-bio">One Line Bio</label>
-                </div>
-                <button class="btn yellow darken-2 z-depth-0">Sign up</button>
-            </form>
-        </div>
-    </div>
- 
 
- <!-- Modal Structure -->
- <div id="" class="modal">
-   <div class="modal-content">
-     <h4>Under Construction</h4>
-     <p>This site is under construction. Please comeback later!</p>
-   </div>
-   <div class="modal-footer">
-     <a href="#!" class="modal-close waves-effect waves-greenbtn-flat">Click here</a>
-   </div>
- </div>
-    <!-- Google API for geolocation and places -->
-    <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZY-pV5hfMZCPTRn4V-2Vne3AI3CIyqL4&libraries=places">
-        </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <script src="assets/js/auth.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".sidenav").sidenav();
-        })
-    </script>
-
-    <!-- My JS -->
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
-</html> --> --> -->
+</html>
