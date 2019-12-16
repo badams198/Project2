@@ -1,0 +1,142 @@
+
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('../images/pet\ background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: American Typewriter, serif;
+
+}
+
+.main-content {
+    min-height: 100%;
+    margin-bottom: -50px
+}
+
+
+#landing {
+    height: 100vh;
+    background-image: url('../images/bck\ pups.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: American Typewriter, serif;
+
+}
+/* 
+#mainText {
+    margin-top: 30vh;
+    font-family: American Typewriter, serif;
+    text-align: center; */
+
+
+
+#paragraph {
+    margin-top: 10vh;
+    font-family: American Typewriter, serif;
+    text-align: left;
+   padding-left: 8cm;
+   
+}
+
+#text {
+    text-align: left;
+    font-family: American Typewriter, serif;
+}
+
+#intro {
+    height: 100%;
+    /* background-color: */
+    margin-top: 5px;
+    background-image: url('../images/pet\ background2.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: American Typewriter, serif;
+
+}
+
+label {
+    font-size: 1.5rem;
+    color:  #f0f0f0;
+}
+
+label.active {
+    font-size: 1.5rem;
+    color:  #f0f0f0;
+}
+
+#name {
+    font-size: x-large;
+
+}
+
+#email {
+    font-size: x-large;
+}
+
+#message {
+    font-size: x-large;
+}
+
+#work {
+
+    background-color:#0d47a1 blue darken-4;
+    margin-top: 50px;
+    background-image: url('../images/pet\ background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: American Typewriter, serif;
+    font-size: x-large;
+}
+
+#footer,
+#push {
+    height: 100px;
+}
+
+#work2 {
+    background-color: rgb(61, 61, 61);
+    margin-top: 50px;
+    background-image: url('../images/pet\ background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: American Typewriter, serif;
+}
+
+#card {
+    display:center;
+    padding: 0 30rem;
+    font-size: large;
+}
+
+#skillsets {
+    background-color: rgb(61, 61, 61);
+    margin-top: 50px;
+    background-image: url('../images/pet\ background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: American Typewriter, serif;
+
+}
+
+#navList {
+    font-stretch: wider, x-large;
+    font-family: American Typewriter, serif;
+    height: 100vh;
+}
