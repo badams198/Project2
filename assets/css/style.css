@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-image: url('../images/pet\ background2.jpg');
+    background-image: url('../images/bck\ green.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,15 +48,14 @@ body {
     font-family: American Typewriter, serif;
 }
 
-#intro {
-    height: 100%;
-    /* background-color: */
-    margin-top: 5px;
-    background-image: url('../images/pet\ background2.jpg');
-    background-position: center; 
+#profile {
+    height: 100vh;
+    margin-top: 50px;
+    background-image: url('../images/bck\ green.jpg');
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    text-align: center;
     font-family: American Typewriter, serif;
 
 }
@@ -71,20 +70,21 @@ label.active {
     color:  #f0f0f0;
 }
 
-#name {
+/* #name {
     font-size: x-large;
 
 }
 
 #email {
     font-size: x-large;
+    font-: ;
 }
 
 #message {
     font-size: x-large;
-}
+} */
 
-#work {
+/* #work {
 
     background-color:#0d47a1 blue darken-4;
     margin-top: 50px;
@@ -94,12 +94,12 @@ label.active {
     background-repeat: no-repeat;
     font-family: American Typewriter, serif;
     font-size: x-large;
-}
-
+} */
+/* 
 #footer,
 #push {
     height: 100px;
-}
+} */
 
 /* #work2 {
     background-color: rgb(61, 61, 61);
@@ -116,14 +116,11 @@ label.active {
     display:center;
     padding: 30rem;
     font-size: large;
-    image-resolution: 40px;
+}
    
-
-      }
 
 #browser { 
     height: 100vh;
-        /* background-color: rgb(61, 61, 61); */
         margin-top: 0px;
         background-image: url('../images/bck\ green.jpg');
         background-position: center;
@@ -139,4 +136,27 @@ label.active {
     font-stretch: wider, x-large;
     font-family: American Typewriter, serif;
     height: 100vh;
+}
+ /* .container {
+    width: 600px;
+    padding: 2em;
+    background: #eee;
+    text-align: center;
+  }
+   */
+ ul {
+    display: inline-block;
+    text-align: left;
+  }
+  
+#contact-form{
+    height: 10cm;
+    width:20cm;
+    text-align: left;
+    font-size: x-large;
+    margin: 3cm;
+    margin-top: auto;
+
+  
+                          
 }
